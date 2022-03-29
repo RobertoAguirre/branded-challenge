@@ -1,0 +1,400 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    /* FUENTES */
+    @font-face{
+        font-family: "TrebuchetMS";
+        src: url('fonts/TrebuchetMS.ttf');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face{
+        font-family: "BebasNeue";
+        src: url('fonts/BebasNeue.otf');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face{
+        font-family: "WebSymbolsRegular";
+        src: url('fonts/websymbols-regular-webfont.eot');
+        src: url('fonts/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+            url('fonts/websymbols-regular-webfont.woff') format('woff'),
+            url('fonts/websymbols-regular-webfont.ttf') format('truetype'),
+            url('fonts/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    .symbol{
+        font-family: "WebSymbolsRegular";
+    }
+
+    .bebas{
+        font-family: "BebasNeue";
+    }
+
+    .trebuchet{
+        font-family: "TrebuchetMS";
+    }
+}
+
+@layer components{
+    .button{
+        @apply
+        bg-black 
+        w-48 
+        h-14 
+        text-white
+        border-black 
+        hover:bg-white 
+        hover:text-black
+        hover:border-black 
+        border-2
+        ;
+    }
+
+    .container-rewards{
+        @apply
+            w-full 
+            flex 
+            flex-row 
+            mx-auto 
+            h-auto 
+            mb-8 
+            mt-3 
+            bg-bgBar 
+            xs:flex-col
+        ;
+    }
+
+    .image-box{
+        @apply
+            block 
+            mx-auto 
+            text-center 
+            mt-48
+            w-full
+        ;
+    }
+
+    .image-box p{
+        @apply
+            text-4xl 
+            font-light
+            xs:pb-40
+        ;
+    }
+
+    .images-container{
+        @apply
+            mx-auto 
+            h-bg-img 
+            flex-row 
+            flex 
+            w-full 
+            space-x-5 
+            text-white
+            xs:flex-col
+            xs:space-x-0
+        ;
+    }
+
+    .already-text{
+        @apply
+            text-black 
+            cursor-pointer 
+            font-semibold
+        ;
+    }
+
+    .container-header{
+        @apply
+            container
+            mx-auto
+            flex
+            flex-row
+            text-black
+            lg:mt-0
+            md:mt-10
+            xs:mt-10
+            xss:mt-10
+        ;
+    }
+
+    .menu-item {
+        @apply 
+            mr-2.5
+            ml-2.5
+            flex-none
+            xs:flex-1
+        ;
+    }
+
+    .menu-item-a{
+        @apply 
+            block 
+            transition 
+            font-light
+        ;
+    }
+
+    .header{
+       @apply
+            container
+            mx-auto
+            h-32
+            text-gray-600
+            w-full
+            justify-center
+            mt-3
+       ;
+    }
+
+    .layout{
+        @apply
+            w-full
+            bg-bone-color
+            h-8
+            flex
+            flex-row
+            lg:flex
+            md:hidden
+            xs:hidden
+            xss:hidden
+        ;
+    }
+
+    .web-image{
+        @apply
+            xss:hidden 
+            lg:block
+            w-full
+        ;
+    }
+
+    .mobile-image{
+        @apply
+            xss:block 
+            sm:hidden
+            w-full
+        ;
+    }
+
+    .nav-right-list{
+        @apply
+            flex
+            flex-1
+            justify-end
+            mr-5
+        ;
+    }
+
+    .nav-left-list{
+        @apply
+            flex
+            flex-row
+            items-center
+        ;
+    }
+
+    .nav-right-list ul{
+        @apply
+            flex
+            flex-row
+            items-center
+            text-center
+        ;
+    }
+
+    .nav-hidden{
+        @apply
+            flex 
+            flex-1 
+            justify-center 
+            lg:flex
+            md:hidden 
+            text-black 
+            xs:hidden 
+        ;
+    }
+
+    .nav-hidden ul{
+        @apply
+            flex
+            flex-row
+            h-20
+            items-center
+            md:justify-end
+            mr-6
+            text-2xl
+            text-center
+            xs:mr-0
+            xs:text-center
+        ;
+    }
+
+    .icon-item{
+        @apply
+            symbol
+            block
+            text-sm
+        ;
+    }
+
+    .img-carrousel{
+        @apply
+            h-44 
+            w-44 
+            rounded
+        ;
+    }
+
+    .footer{
+        @apply
+            flex 
+            flex-col 
+            mx-auto 
+            w-full 
+            bg-gray-primary 
+            h-auto 
+            mt-10
+
+            xs:mt-96
+        ;
+    }
+
+    .container-suscribe{
+        @apply
+            block 
+            flex-1 
+            text-center 
+            mt-10 
+            space-y-5
+
+            xs:mx-auto
+        ;
+    }
+
+    .menu-footer{
+        @apply
+            -ml-3 
+            text-sm 
+            space-y-2 
+            mt-3
+        ;
+    }
+
+    .menu-icon{
+        @apply
+            flex-row 
+            flex 
+            space-x-11
+
+            lg:ml-36
+            md:mt-5
+            md:mx-auto
+            xs:mx-auto
+            xs:mt-5
+            xss:mx-auto
+            xss:mt-5
+        ;
+    }
+
+    .copyright-text{
+        @apply
+            mx-auto 
+            text-sm 
+            text-gray-600 
+            mt-20 
+            mb-10
+        ;
+    }
+
+    .container-footer-information{
+        @apply
+            flex 
+            flex-1 
+            flex-row 
+            mt-20
+
+            lg:flex-row
+            md:flex-col
+            xs:flex-col
+            xss:flex-col
+        ;
+    }
+
+    .container-need-help{
+        @apply
+            flex 
+            flex-col 
+            flex-1 
+            ml-36
+
+            xs:ml-10
+            xss:ml-5
+        ;
+    }
+
+    .certified-image{
+        @apply
+            w-16 
+            mt-16 
+            lg:ml-36 
+            md:mx-auto 
+            xs:mb-5 
+            xs:mx-auto 
+            xss:mx-auto
+        ;
+    }
+
+    .menus-container{
+        @apply
+            flex 
+            flex-1 
+            space-x-3 
+            lg:flex-row 
+            md:flex-col 
+            md:mx-auto 
+            xs:ml-4
+        ;
+    }
+
+    .slide-container{
+        @apply
+            w-full 
+            mx-auto 
+            h-160 
+            bg-bone-color 
+            mt-12 
+            text-black 
+            flex 
+            flex-row
+            lg:flex-row
+            lg:mx-auto
+            md:flex-col
+            md:mx-auto
+            xs:flex-col
+            xs:mx-auto
+            xss:flex-col
+            xss:mx-auto
+        ;
+    }
+
+    .information-slide{
+        @apply
+            flex 
+            flex-1 
+            mt-10 
+            mb-28 
+            ml-48 
+            mr-48 
+            h-auto
+        ;
+    }
+}
