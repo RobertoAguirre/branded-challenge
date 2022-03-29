@@ -248,8 +248,18 @@
 
     .img-carrousel{
         @apply
-            h-44 
-            w-44 
+            lg:h-44 
+            lg:w-44 
+            lg:mx-auto
+            md:h-40
+            md:w-40
+            md:mx-auto
+            xs:h-32
+            xs:w-32
+            xs:mx-auto
+            xss:h-20
+            xss:w-20
+            xss:mx-auto
             rounded
         ;
     }
