@@ -8,7 +8,6 @@
         scroll-behavior: smooth;
     }
 
-    /* FUENTES */
     @font-face{
         font-family: "TrebuchetMS";
         src: url('fonts/TrebuchetMS.ttf');
@@ -290,7 +289,6 @@
             bg-gray-primary 
             h-auto 
             mt-10
-
             xs:mt-96
         ;
     }
@@ -302,7 +300,6 @@
             text-center 
             mt-10 
             space-y-5
-
             xs:mx-auto
         ;
     }
@@ -321,7 +318,6 @@
             flex-row 
             flex 
             space-x-11
-
             lg:ml-36
             md:mt-5
             md:mx-auto
@@ -348,7 +344,6 @@
             flex-1 
             flex-row 
             mt-20
-
             lg:flex-row
             md:flex-col
             xs:flex-col
