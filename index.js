@@ -1,6 +1,15 @@
 const express = require('express');
 const app = express();
+const viewFile = require('./')
 const PORT = process.env.PORT || 3000;
+
+app.set("view engine", "ejs");
+app.set("views", __dirname + "/views");
+
 app.listen(PORT, () => {
-    console.log(`Our app is running on port ${ PORT }`);
+    console.log(`Our app is running on port ${PORT}`);
+});
+
+app.get("/", (req, res) => {
+    res.sendFile(__dirname + '/index.html');
 });
