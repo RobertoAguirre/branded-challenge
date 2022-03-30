@@ -26,10 +26,10 @@
     </script>
 </head>
 
-<body class="font-serif">
+<body>
     <!--Header-->
-    <div class="layout items-center">
-        <p class="font-extralight flex-1 ml-32">Free Shipping on Orders Over $100</p>
+    <div class="layout items-center text-xs">
+        <p class="font-extralight flex-1 ml-32 ">Free Shipping on Orders Over $100</p>
         <p class="flex-1 ml-56">|</p>
         <a href="#" class="underline font-extralight flex-1">SIGN UP</a>
     </div>
@@ -83,7 +83,7 @@
                     </ul>
                 </nav>
                 <nav class="nav-right-list lg:hidden md:hidden xs:flex xss:flex">
-                    <ul class="">
+                    <ul class="space-x-2">
                         <li class="menu-item">
                             <a href="#" class="icon-item">L</a>
                         </li>
@@ -126,7 +126,7 @@
                     class="xss:w-full" />
             </a>
         </div>
-        <div class="text-center">
+        <div class="text-center font-serif">
             <h3 class="text-4xl">
                 Your Spring Sanctuary
             </h3>
@@ -195,7 +195,8 @@
             </a>
         </div>
         <div class="slide-container">
-            <div id="carouselExampleCaptions" class="carousel slide relative w-full" data-bs-ride="carousel">
+            <div id="carouselExampleCaptions"
+                class="carousel slide relative w-full lg:block md:hidden xs:hidden xss:hidden font-serif" data-bs-ride="carousel">
                 <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
@@ -205,13 +206,13 @@
                 <div class="carousel-inner relative w-full overflow-hidden">
                     <div class="carousel-item active relative float-left w-full ">
                         <img src="https://cdn.shopify.com/s/files/1/0253/4355/7737/files/Slide_01_1280x.png?v=1635954358"
-                            class="h-140 lg:ml-160 mt-10 xs:mx-auto xss:mx-auto" />
+                            class="h-140 lg:ml-160 mt-10 mb-10 xs:mx-auto xss:mx-auto" />
                         <div class="carousel-caption absolute hidden md:block ml-36 mb-32 leading-10 text-black">
                             <p class="icon-item text-black">R R R R R</p>
                             <h3 class="text-4xl w-72">Nice fabric. This dress has a great drapey fel. Love the 3/4
                                 sleeves especially</h3>
                             <p>- SUE W</p>
-                            <a class="underline">Shop The 3 quarter Sleeve Drees</a>
+                            <a href="#" class="underline">Shop The 3 quarter Sleeve Drees</a>
                         </div>
                     </div>
                     <div class="carousel-item relative float-left w-full ">
@@ -222,7 +223,7 @@
                             <h3 class="text-4xl w-72">Fits perfectly and very comfortable to wear. Thank You for
                                 providing desses that i Love</h3>
                             <p>- VAY B</p>
-                            <a class="underline">Shop Now</a>
+                            <a href="#" class="underline">Shop Now</a>
                         </div>
                     </div>
                 </div>
@@ -241,6 +242,19 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
+            <div class="lg:hidden md:flex md:flex-col xs:flex xs:flex-col xss:flex xss:flex-col mx-auto">
+                <div class="flex-1 ml-5">
+                    <p class="icon-item text-black">R R R R R</p>
+                    <h3 class="text-4xl w-72">Nice fabric. This dress has a great drapey fel. Love the 3/4
+                        sleeves especially</h3>
+                    <p>- SUE W</p>
+                    <a class="underline">Shop The 3 quarter Sleeve Drees</a>
+                </div>
+                <div class="flex-1">
+                    <img src="https://cdn.shopify.com/s/files/1/0253/4355/7737/files/Slide_01_1280x.png?v=1635954358"
+                        class="h-140 lg:ml-160 mt-10 mg-100 xs:mx-auto xss:mx-auto" />
+                </div>
+            </div>
         </div>
         <div class="container mx-auto h-60 text-center">
             <p class="mt-10 text-base font-extralight">@KarenKane</p>
@@ -250,7 +264,7 @@
                 </nav>
             </div>
         </div>
-        <div class="container-rewards">
+        <div class="container-rewards font-serif">
             <div class="flex-1 mt-16 mb-10 ml-5 xs:text-center">
                 <h3 class="text-4xl">Karen Kane Rewards</h3>
                 <p class="mt-5">Members get rewarded for shopping, sharing their favorites styles, reviewing best
@@ -267,7 +281,7 @@
                 </div>
             </div>
         </div>
-        <div class="images-container">
+        <div class="images-container font-serif">
             <a href="#" class="flex-1 bg-imageWoman bg-contain text-center">
                 <div class="image-box">
                     <p>Best-Sellers</p>
