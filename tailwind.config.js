@@ -12,7 +12,8 @@ module.exports = {
             }),
             screens: {
                 'xs': { 'max': '768px' },
-                'xss': { 'max': '655px' }
+                'xss': { 'max': '655px' },
+                'xlg': { 'min': '1900px' },
             },
             spacing: {
                 'w-custom': '94.7%',
@@ -24,6 +25,8 @@ module.exports = {
                 'bg-img': '25.6rem',
             },
             margin: {
+                '175': '55rem',
+                '165': '45rem',
                 '160': '40rem',
             },
             colors: {
