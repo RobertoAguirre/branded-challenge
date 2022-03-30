@@ -23,6 +23,27 @@
     }
 
     @font-face{
+        font-family: "GTAmericaRegular";
+        src: url('fonts/GTAmericaRegular.otf');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face{
+        font-family: "GTAmericaRegular";
+        src: url('fonts/GTAmericaRegular.ttf');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face{
+        font-family: "PlayfairDisplay-Regular";
+        src: url('fonts/PlayfairDisplay-Regular.ttf');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face{
         font-family: "WebSymbolsRegular";
         src: url('fonts/websymbols-regular-webfont.eot');
         src: url('fonts/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
@@ -39,6 +60,18 @@
 
     .bebas{
         font-family: "BebasNeue";
+    }
+
+    .americanRegular{
+        font-family: "GTAmericaRegular";
+    }
+
+    .americanRegularT{
+        font-family: "GTAmericaRegular";
+    }
+
+    .playfairDisplay{
+        font-family: "PlayfairDisplay-Regular";
     }
 
     .trebuchet{
@@ -72,6 +105,8 @@
             mt-3 
             bg-bgBar 
             xs:flex-col
+            bg-center
+            bg-contain
         ;
     }
 
@@ -163,6 +198,7 @@
 
     .text-title{
         @apply
+            playfairDisplay
             lg:text-3xl 
             font-extralight 
             md:text-2xl 
@@ -178,10 +214,7 @@
             h-8
             flex
             flex-row
-            lg:flex
-            md:hidden
-            xs:hidden
-            xss:hidden
+           
         ;
     }
 

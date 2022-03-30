@@ -8,7 +8,7 @@ module.exports = {
             backgroundImage: theme => ({
                 'imageWoman': "url('../img/img_1.webp')",
                 'familyImage': "url('../img/img_2.webp')",
-                'bgBar': "url('../img/background_bar.jpeg')",
+                'bgBar': "url('../img/background.webp')",
             }),
             screens: {
                 'xs': { 'max': '768px' },
