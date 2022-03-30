@@ -4,6 +4,10 @@
 
 @layer base {
 
+    html{
+        scroll-behavior: smooth;
+    }
+
     /* FUENTES */
     @font-face{
         font-family: "TrebuchetMS";
