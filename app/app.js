@@ -69,7 +69,7 @@ function renderMenuItems() {
     menuItems.forEach((item) => {
         const liItem = document.createElement('li');
         const aItem = document.createElement('a');
-        liItem.classList.add('menu-item');
+        liItem.classList.add('menu-item', 'text-sm');
         aItem.classList.add('menu-item-a');
         aItem.textContent = item
 
