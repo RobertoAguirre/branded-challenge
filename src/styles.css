@@ -152,7 +152,20 @@
             w-full
             justify-center
             mt-3
+            md:h-28
+            xs:h-20
+            xss:h-16
        ;
+    }
+
+    .text-title{
+        @apply
+            lg:text-3xl 
+            font-extralight 
+            md:text-2xl 
+            xs:text-xl 
+            xss:text-xl
+        ;
     }
 
     .layout{
