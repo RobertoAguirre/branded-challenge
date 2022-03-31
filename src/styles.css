@@ -214,7 +214,6 @@
             h-8
             flex
             flex-row
-           
         ;
     }
 
@@ -414,7 +413,6 @@
             flex-1 
             space-x-3 
             lg:flex-row 
-            md:flex-col 
             md:mx-auto 
             xs:ml-4
         ;

@@ -17,7 +17,8 @@ module.exports = {
             },
             spacing: {
                 'w-custom': '94.7%',
-                'w-list': '73%'
+                'w-list': '73%',
+                'w-all': '100%'
             },
             height: {
                 '160': '40rem',
