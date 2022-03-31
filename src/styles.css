@@ -102,7 +102,7 @@
             mx-auto 
             h-auto 
             mb-8 
-            mt-3 
+            mt-10
             bg-bgBar 
             xs:flex-col
             bg-center
@@ -296,8 +296,8 @@
 
     .img-carrousel{
         @apply
-            lg:h-44 
-            lg:w-44 
+            lg:h-auto
+            lg:w-11/12
             lg:mx-auto
             md:h-40
             md:w-40
@@ -411,7 +411,7 @@
         @apply
             flex 
             flex-1 
-            space-x-3 
+            space-x-8
             lg:flex-row 
             md:mx-auto 
             xs:ml-4

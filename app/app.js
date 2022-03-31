@@ -71,6 +71,7 @@ function renderMenuItems() {
         const aItem = document.createElement('a');
         liItem.classList.add('menu-item', 'text-sm');
         aItem.classList.add('menu-item-a');
+        aItem.setAttribute('href', '#');
         aItem.textContent = item
 
         liItem.appendChild(aItem);
